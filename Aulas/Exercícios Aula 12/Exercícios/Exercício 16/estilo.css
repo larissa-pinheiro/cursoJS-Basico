@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(121, 100, 237);
+    font: normal 15pt Calibri;
+}
+
+header {
+    color: aliceblue;     /* altera a cor do topo/título */
+    text-align: center;     /* centraliza o texto */
+}
+
+section {
+    background-color: aliceblue;
+    border-radius: 10px;    /* insere uma borda no background/quadro */
+    padding: 15px;   /* dá espaço dentro do quadro */
+    width: 500px;    /* ajusta a largura do background/quadro */
+    margin: auto;    /* deixa o quadro centralizado */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.301);    /* insere uma sombra. os px são, respectivamente: 
+                                                        deslocamento lateral, vertical e espalhamento */
+}
+
+footer {
+    color: aliceblue;     /* altera a cor do rodapé */
+    text-align: center;     /* centraliza o texto */
+    font-style: italic;     /* deixa a fonte em itálico ou outros */
+}
