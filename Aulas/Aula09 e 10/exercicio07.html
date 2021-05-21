@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area {     /* foi usado area nesse caso porque é o nome da div*/
+            font: 15pt Calibri ;
+            background: lightseagreen;
+            color: linen;
+            width: 200px;  /*largura*/
+            height: 200px; /*altura*/
+            line-height: 200px; /*deixa o texto no meio do quadro*/
+            text-align: center; /*deixa o texto no centro*/
+        }
+    </style>
+</head>
+<body>
+    <!-- se eu quiser usar a mesma var para mais de uma função, posso colocar ela aqui fora da função -->
+
+    <div id = 'area' onclick="clicar()" onmouseover="entrar()" onmouseout="sair()">Interaja...</div>
+    <script>
+        function clicar() {
+            var clicar = window.document.getElementById('area')
+            area.innerText = "Clicou!"   //coloquei area porque é o nome da id da div
+            area.style.background = "red"  //toda vez que clicar, ficará vermelho
+        }
+
+        function entrar() {
+            var entrar = window.document.getElementById('area')
+            area.innerText = "Entrou!"   //coloquei area porque é o nome da id da div
+        }
+
+        function sair() {
+            var sair = window.document.getElementById('area')
+            area.innerText = "Saiu!"   //coloquei area porque é o nome da id da div
+            area.style.background = "lightseagreen"   // toda vez que sair, volta pra cor original
+        }
+        
+    </script>
+</body>
+</html>
