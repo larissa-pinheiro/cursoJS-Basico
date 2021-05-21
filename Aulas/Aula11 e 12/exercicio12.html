@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body {
+            font: normal 15pt Calibri;
+        }
+        h1 {
+            background-color: lightcoral;
+            width: 325px;
+            height: 32px;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            font: bold 20pt Calibri;
+        }
+    </style>
+</head>
+<body>
+    <h1>Checagem de Nacionalidade</h1>
+    <p>Em qual país você nasceu?</p>
+    <input type="text" name="txtpaís" id="txtpaís">
+    <input type="button" value="Checar" onclick="verificar()">
+    <div id="res"></div>
+
+    <script>
+        function verificar() {
+            var país = window.document.querySelector('input#txtpaís').value
+            //sempre colocar dentro da função o .value , que é para o input
+            var res = window.document.querySelector('div#res')
+        if (país == 'Brasil') {
+                res.innerHTML = '<p>Você é Brasileiro</p>'
+        } else {
+            res.innerHTML = '<p>Você é Estrangeiro</p>'
+            }
+        }
+    </script>
+</body>
+</html>
