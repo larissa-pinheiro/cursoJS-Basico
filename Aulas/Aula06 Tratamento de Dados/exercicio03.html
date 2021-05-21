@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+
+    <style>
+        body {
+            background-color: lightgoldenrodyellow;
+            color: slateblue;
+            font: normal 15pt Arial;
+        }
+        h1 {
+            color: rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1> 
+    <p>Já me livrei da maldição</p>
+
+    <script>
+        // (number + number) para adição
+        // (string + string) para concatenação
+        /* para fazer conversão de string para number de número inteiro,
+        existe o comando Number.parseInt(n) ou apenas parseInt(n).
+        > já para fazer conversão de número real (quebrado), o comando é Number.parseFloat(n) ou apenas parseFloat(n)
+        atualmente pode-se usar somente Number também para a conversão direta sem precisar especificar
+        se o número é inteiro ou quebrado*/
+
+        var n1 = Number(window.prompt('Digite um número: ')) //window.prompt é um comando para retornar string somente
+        var n2 = Number(window.prompt('Digite outro número: '))
+        var s = n1 + n2  //var s é soma, mas o JavaScript não entende nesse momento como soma e sim como concatenação.
+
+        /* window.alert('A soma dos valores é: '+ s) >> o + serve para adição e também para concatenação.
+        mas a melhor forma para projetar essa resposta é utilizando Template String:*/
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`) // esse ${} se chama PlaceHolder
+        
+    </script>
+    
+</body>
+</html>

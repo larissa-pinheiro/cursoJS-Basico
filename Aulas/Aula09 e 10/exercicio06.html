@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro passos com DOM</title>
+
+    <style>
+        body {
+            background-color: rgb(74, 129, 158) ;
+            color: lightgray;
+            font: normal 15pt Calibri;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando os estudos com DOM</h1>   <!-- Título principal --> 
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em Javascript</p>
+    <div id='msg'>Clique em mim</div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0]   
+        //se não colocar o [], seleciona todos parágrafos existentes. colocando o [0], seleciona o primeiro parágrafo
+        window.document.write('No primeiro parágrafo está escrito assim: ' + p1.innerText)  //fiz concatenação
+        p1.style.color = 'blue'
+        corpo.style.background='black'
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'   //posso mudar a cor do background da div
+        d.innerText = 'Estou aguardando...'  //posso mudar o que está escrito na div
+        window.document.getElementById('msg').innerText='Olá'  //assim posso modificar tudo de uma vez
+        
+    </script>
+</body>
+</html>
